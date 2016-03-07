@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="description" content="LCC - LOL Champion Constructor" />
+
+		<title>LCC - LOL Champion Constructor</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Aguafina+Script|Condiment|Herr+Von+Muellerhoff|Lovers+Quarrel|Mrs+Saint+Delafield|Princess+Sofia' rel='stylesheet' type='text/css'>
+		<!--
+
+		<link rel="shortcut icon" href="img/MMR.png" />
+		-->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/styles.css">
+
+
+
+		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+	</head>
+	<body ng-app="appLCC">
+
+		<div class="header" ng-controller="champController">
+
+				<champ-selector ng-repeat="x in cdata.data" data="x"></champ-selector>
+				<div class="cinfo">
+					<div>
+					</div>
+					<div>
+					</div>
+				</div>
+
+		</div>
+		<div class="container">
+
+		</div>
+
+		<div class="footer" >
+			<p>LCC - LOL Champion Constructor isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.</p>
+		</div>
+
+
+
+
+
+		<!-- Modules -->
+    	<script src="js/app.js"></script>
+    	<!-- Controllers -->
+		<script src="js/controllers/champController.js"></script>
+
+
+		<!-- Directives -->
+		<script src="js/directives/champSelector.js"></script>
+		<!-- Services -->
+    	<script src="js/services/champions.js"></script>
+
+	</body>
+</html>
